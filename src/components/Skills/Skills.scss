@@ -1,0 +1,80 @@
+@import "../global.scss";
+
+.skillWraper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // margin-bottom: 100px;
+    // margin-top: 40px;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    h1{
+        margin-bottom: 5%;
+        color: rgb(202, 202, 202);
+        font-size: 44px;
+        margin-top: 100px;
+
+        @include mobile{
+            font-size: 38px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .skills{
+        color: white;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 90%;
+        .skillCard{
+            margin: 10px 40px;
+            // position: relative;
+            background-color: rgb(209, 209, 209);
+            border-radius: 10px;
+            padding: 3px;
+            width: 10%;
+            // height: 150px;
+            margin-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+            min-height: 100px;
+
+            
+            @include lPY{
+                margin: 40px 40px;
+                width: 15%;
+            }
+            @include mobile{
+                min-height: 80px;
+                margin: 20px 20px;
+                width: 23%;
+            }
+    
+            img{
+                width: 100%;
+                margin-top: -50%;
+                // height: 100%;
+                // border-radius: 100%;
+                // height: 100px;
+                // position: absolute;
+                // top: -35%;
+                // left: 0;
+            }
+            .skillname{
+                // position: absolute;
+                // top: 65%;
+                color: rgb(95, 95, 95);
+                font-size: 1.5rem;
+                margin-top: 20%;
+                margin-bottom: 20%;
+                
+                @include mobile{
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}

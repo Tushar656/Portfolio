@@ -1,0 +1,164 @@
+@import "../global.scss";
+
+body{
+    background-color: $backColor;
+}
+
+.topbar{
+    width: calc(100vw - 4rem);
+    height: 65px;
+    background-color: #333333;
+    color: $textColor;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 2rem;
+    z-index: 120;
+    position: fixed;
+    top: 0;
+    transition: all 0.3s ease;
+
+    @include mobile{
+        width: calc(100vw - 2rem);
+        padding: 0px 1rem;
+        height: 60vh;
+        flex-direction: column;
+        top: -50vh;
+        justify-content: flex-end;
+    }
+
+    .leftTopbar{
+        font-size: 2.7rem;
+        font-family: 'Great Vibes', cursive;
+        color: #d8d8d8;
+        cursor: pointer;
+        a{
+            color: #d8d8d8;
+            text-decoration: none;
+            &:hover{
+                color: #000000;
+            }
+        }
+        @include mobile{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 10px ;
+        }
+    }
+
+
+    .rightTopbar{
+        @include mobile{
+            display: none;
+        }
+        ul{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            @include mobile{
+                flex-direction: column;
+                padding: 20px 0px;
+            }
+            
+            li{
+                list-style: none;
+                margin: 0px 1.2rem;
+                display: flex;
+                align-items: center;
+                
+                @include mobile{
+                    padding: 15px 0px;
+                    border-top: 1px solid rgb(85, 85, 85);
+                    border-bottom: 1px solid rgb(85, 85, 85);
+                    width: 100vh;
+                    justify-content: center;
+                }
+                
+                a{
+                    color: $textColor;
+                    text-decoration: none;
+                    font-size: 1.2rem;
+                    font-family: 'poppins', sans-serif;
+                }
+                a:hover{
+                    color: white;
+                }
+                a::after{
+                    content: "";
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    height: 0.15em;
+                    width: 0%;
+                    background-color: #9700dd;
+                    transition: all ease-in-out 280ms;
+                    border-radius: 10px;
+                }
+                a:hover:after{
+                    width: 100%;
+                }
+                // a.active{
+                //     color: white;
+                // }
+                // a.active:after{
+                //     content: "";
+                //     display: block;
+                //     margin-left: auto;
+                //     margin-right: auto;
+                //     height: 0.15em;
+                //     width: 70%;
+                //     background-color: #5500dd;
+                //     transition: all ease-in-out 280ms;
+                //     border-radius: 10px;
+                // }
+            }
+        }
+    }
+    .topbarright{
+        display: flex;
+        flex-direction: column;
+        width: 32px;
+        cursor: pointer;
+
+        span{
+            height: 3px;
+            width: 100%;
+            background-color: aliceblue;
+            border-radius: 10px;
+            display: none;
+
+            @include mobile{
+                display: block;
+                margin-bottom: 5px;
+                transform-origin: 0.14cm;
+                transition: all 0.3s ease-in-out;
+                
+            }
+        }
+    }
+    @include mobile{
+        &.Active{
+            top: 0;
+            height: auto;
+            justify-content: space-between;
+    
+            .rightTopbar{
+                display: block;
+            }
+            .topbarright{
+                .line1{
+                    transform: rotate(45deg);
+                }
+                .line2{
+                    opacity: 0;
+                }
+                .line3{
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

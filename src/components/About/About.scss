@@ -80,7 +80,7 @@
             cursor: pointer;
     
             @include mobile{
-                margin: 30px 6.5px;
+                margin: 30px 12px;
                 padding: 8px;
             }
     
@@ -89,8 +89,8 @@
                 height: 100px;
     
                 @include mobile{
-                    width: 40px;
-                    height: 40px;
+                    width: 53px;
+                    height: 50px;
                 }
             }
         }

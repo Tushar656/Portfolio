@@ -18,7 +18,7 @@ export default function Intro() {
       <div className="downarw">
         <a href='#intro' style={{color: 'white'}}><KeyboardArrowUp className='Downarrow'/></a>
       </div>
-        <div class="stars">
+        {/* <div class="stars">
           <div class="star"></div>
           <div class="star"></div>
           <div class="star"></div>
@@ -36,40 +36,7 @@ export default function Intro() {
           <div class="star"></div>
           <div class="star"></div>
           <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-          <div class="star"></div>
-        </div>
+        </div> */}
         <div className="IntroContainor" id='intro'>
           <div data-aos-duration="1500" data-aos="zoom-in"  className="introLeft" style={{opacity: window.innerWidth<1000 ? 0.3 : 0.9}}>
             <Player

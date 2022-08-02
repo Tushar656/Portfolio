@@ -5,7 +5,7 @@ export default function Projects() {
   return (
     <div className='Projects' id='projects'>
         <h1 data-aos-duration="1500" data-aos="fade-right" >My Projects</h1>
-        <a href='https://github.com/Tushar656?tab=repositories' target="_blank"><button className='vmBtn'>View More</button></a>
+        <a href='https://github.com/Tushar656?tab=repositories' target="_blank"><button data-aos-duration="1500" data-aos="fade-left" className='vmBtn'>View More</button></a>
         <div data-aos-duration="1500" data-aos="fade-up"  className="allProjects">
             <div className="projectCard">
                 <img src="https://firebasestorage.googleapis.com/v0/b/portfolio-124ba.appspot.com/o/projects%2FfullSM.png?alt=media&token=4a89c231-b5c3-4d09-9942-378e50748f34" alt="" />
